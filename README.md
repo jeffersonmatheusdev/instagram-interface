@@ -17,11 +17,3 @@
 ## Teste responsivo:
 
 ![Foo](https://github.com/jeffersonmatheusdev/instagram-interface/blob/main/prints/f7e8a25e-bc2a-4635-b167-54affb583cb1.gif)
-
-## Visualizando o resultado
-
-Para visualizar o resultado em sua máquina, siga os seguintes passos:
-```sh
-cd instagram-interface-main
-leve o arquivo "index.html" para o navegador
-```
