@@ -1,0 +1,215 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.global {
+    width: 100vw;
+    height: 99.3vh;
+}
+
+.main {
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin-left: auto;
+}
+
+.cellphone {
+    object-fit: contain;
+    width: 100%;
+    height: 90%;
+    margin: auto
+}
+
+.marge {
+    height: 95%;
+    animation: changeBG 15s infinite;
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    margin: auto;
+}
+
+.login > img {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%
+}
+
+.login > input {
+    outline: none;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    width: 80%;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+}
+
+.login > button {
+    font-style: bold;
+    font-size: medium;
+    color: white;
+    background-color: #b2dffc;
+    width: 85%;
+    padding: 1.5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+
+.login > div {
+    display: flex;
+    padding-top: 4%;
+    padding-bottom: 8%;
+}
+
+.text, .line > a {
+    color: #8e8e8e;
+}
+
+.line {
+    background-color: rgba(var(--b38,219,219,219),1);
+    height: 1px;
+    position: relative;
+    top: 0.7em;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fb {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.fb > div > img {
+    width: 16px;
+    height: 16px;
+    padding-right: 5px;
+}
+
+.fb > div > span {
+    color: #385185;
+    font-weight: 500;
+    font-size: medium;   
+}
+
+.fb > a {
+    color: #385185;
+    font-size: 14px;
+    padding-top: 14px;
+}
+
+.register {
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.register > a {
+    padding-left: 5px;
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.download > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.download > div > img {
+    object-fit: cover;
+    width: 136px;
+    height: 43px;
+    padding-left: 5px;
+    border-radius: 8px;
+}
+
+.download > a {
+    padding-bottom: 2%;
+}
+
+
+@keyframes changeBG {
+    0%, 100% {
+        background: url(/assets/image/4d62acb667fb.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    25% {
+        background: url(/assets/image/fdfe239b7c9f.png) no-repeat; 
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    50% {
+        background: url(/assets/image/a4fd825e3d49.png) no-repeat; 
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    75% {
+        background: url(/assets/image/94edb770accf.png) no-repeat; 
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 900px), screen and (max-height: 600px) {
+    .left {
+        display: none;
+    }
+    .right {
+        width: 100%;
+    }
+    .main {
+        margin: auto;
+    }
+}
